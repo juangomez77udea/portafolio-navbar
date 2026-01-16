@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+:root {
+      --animation-slide-container: slide-container 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      --animation-letter-fade: letter-fade 10s linear infinite;
+}
+
+@keyframes slide-container {
+      0% {
+            transform: translateX(-100%);
+      }
+
+      10%,
+      80% {
+            transform: translateX(0);
+      }
+
+      90%,
+      100% {
+            transform: translateX(100vw);
+      }
+}
+
+@keyframes letter-fade {
+
+      0%,
+      10% {
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateY(10px);
+      }
+
+      15%,
+      65% {
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateY(0);
+      }
+
+      75%,
+      100% {
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateY(-10px);
+      }
+}
+
+.letter-stagger {
+      animation: letter-fade 10s linear infinite;
+      animation-fill-mode: both;
+}

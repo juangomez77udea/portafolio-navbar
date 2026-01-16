@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client";
 import Navbar from './components/Navbar';
+import WelcomeBanner from "./components/WelcomeBanner";
 
 import astro from './assets/img/astro.jpg';
 
@@ -11,6 +12,7 @@ const App = () => (
     className="h-screen w-screen bg-cover bg-center relative flex items-center justify-center"
     style={{ backgroundImage: `url(${astro})` }}
   >
+    <WelcomeBanner />
     <Navbar />
   </main>
 );

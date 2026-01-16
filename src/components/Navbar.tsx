@@ -6,7 +6,7 @@ import { HiOutlineSquares2X2 } from "react-icons/hi2";
 
 const Navbar = () => {
       const icons = [
-            { icon: <FaFirefoxBrowser className="text-orange-500" />, label: "Browser" },
+            { icon: <FaFirefoxBrowser className="text-orange-500" />, label: "Pitch" },
             { icon: <FaRegCalendarAlt className="text-blue-400" />, label: "Calendar" },
             { icon: <IoSettingsSharp className="text-gray-400" />, label: "Settings" },
             { icon: <FaCalculator className="text-green-500" />, label: "Calculator" },
